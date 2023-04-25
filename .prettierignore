@@ -1,0 +1,11 @@
+node_modules/
+.nuxt/
+.nitro/
+.cache/
+.output/
+.DS_Store/
+.nuxt/
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

@@ -1,0 +1,31 @@
+@tailwind base
+@tailwind components
+@tailwind utilities
+
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap')
+
+:root
+  --basic-background-color: #333
+  --basic-text-color: #fff
+  --primary-background-color: #3D736D
+  --primary-text-color: #3D736D
+
+html, body
+  height: 100%
+  overflow-x: hidden
+  background-color: var(--basic-background-color)
+  color: var(--basic-text-color)
+
+#__nuxt
+  flex: 1 1 auto
+  position: relative
+  height: 100%
+
+.font-langar
+  font-family: 'Langar', cursive
+
+.color-primary
+  color: var(--primary-text-color)
+
+.background-primary
+  background-color: var(--primary-background-color)

@@ -1,0 +1,45 @@
+{
+  "name": "@streamkits/tv_streamkits_chatkits",
+  "version": "0.0.1",
+  "license": "Business-Source-License",
+  "scripts": {
+    "clean": "rimraf node_modules .nuxt .output dist",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "test": "nuxi test",
+    "test:watch": "nuxi test --dev --watch",
+    "lint": "yarn lint:js && yarn lint:prettier",
+    "lint:js": "eslint --ext \\\"**/*{.js,.ts,.vue}\\\" --ignore-path .gitignore",
+    "lint:prettier": "prettier --check .src/",
+    "lint:fix": "prettier --write --list-different . && yarn lint:js --fix"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.16.2",
+    "quasar": "^2.11.10",
+    "tmi.js": "^1.8.5"
+  },
+  "devDependencies": {
+    "@nuxt/test-utils": "^3.3.2",
+    "@tailwindcss/typography": "^0.5.9",
+    "@types/node": "^18.15.10",
+    "@types/tmi.js": "^1.8.3",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "@vueuse/core": "^9.13.0",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.36.0",
+    "jest": "^29.5.0",
+    "nuxt": "^3.3.2",
+    "nuxt-quasar-ui": "^1.7.2",
+    "playwright": "^1.32.1",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.7",
+    "rimraf": "^4.4.1",
+    "sass": "^1.60.0",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5.0.2",
+    "vite-plugin-pug": "^0.3.2",
+    "vitest": "^0.29.8"
+  }
+}
